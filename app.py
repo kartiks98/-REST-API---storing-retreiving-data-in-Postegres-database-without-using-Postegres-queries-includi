@@ -9,7 +9,6 @@ Created on Wed Apr 22 00:52:40 2020
 from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
-import psycopg2
 
 from security import authenticate, identity
 from resources.user import UserRegister
