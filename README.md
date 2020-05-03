@@ -1,5 +1,5 @@
 # REST API - Storing & Retreiving data from Postegres database (with Authentication)
-An API of my unique style that is far easy to understand than other APIs that can be used to interact with the database quite easily and efficiently with the use of Authentication for Signup & Login.
+An API of my unique style that is far easy to understand than other APIs that can be used to interact with the Postgres database quite easily and efficiently with the use of Authentication for Signup & Login.
 
 ## What is this API exactly do?
 1. Can create stores with their name & an id.
@@ -11,7 +11,7 @@ An API of my unique style that is far easy to understand than other APIs that ca
 7. Can Sign Up new users in dabase.
 8. Can Login the registered users through Authentication.
 
-## Libraries Used for creating API without handling Postegres queries(Using SQLAlchemy)
+## Libraries Used for creating API without handling Postgres queries(Using SQLAlchemy)
 1. flask
 2. flask_restful
 3. flask_jwt
