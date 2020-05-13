@@ -48,9 +48,12 @@ from models.user import UserModel
 authenticate function & remembers it for authentication later on when 
 identity function is called.
 
-jWT does not care of identity function of what it returns but should return 
+authenticate function parameters can have any name but arguments' names should
+be defined specifically as 'username' & 'password' in json format.
+
+JWT does not care of identity function of what it returns but should return 
 something so as to vrify JWT that the function is returning something else it 
-will give you an error if you did not return anything."""
+will give you an error if you did not return anything.""" # - My Observations
 
 def authenticate(username,password):
     user=UserModel.find_by_username(username)
