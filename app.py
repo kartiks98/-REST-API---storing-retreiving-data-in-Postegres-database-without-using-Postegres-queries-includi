@@ -9,6 +9,7 @@ Created on Wed Apr 22 00:52:40 2020
 from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
+from flask_cors import CORS, cross_origin
 
 from security import authenticate, identity
 from resources.user import UserRegister
@@ -23,7 +24,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
 app.secret_key = 'key'
 api = Api(app)
-
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.before_first_request
 def create_tables():
