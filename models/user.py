@@ -1,5 +1,6 @@
 from db import db
 
+Blacklist = set()
 
 class UserModel(db.Model):
     __tablename__ = 'users'
