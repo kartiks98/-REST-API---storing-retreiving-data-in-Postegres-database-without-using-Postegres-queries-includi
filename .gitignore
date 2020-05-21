@@ -4,3 +4,4 @@ __pycache__/
 .spyproject/
 MyData.db
 Extra Files/
+.vscode/
