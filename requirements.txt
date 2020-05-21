@@ -1,6 +1,6 @@
 Flask
 Flask-RESTful
-Flask-JWT
+flask_jwt_extended
 Flask-SQLAlchemy
 gunicorn
 psycopg2
